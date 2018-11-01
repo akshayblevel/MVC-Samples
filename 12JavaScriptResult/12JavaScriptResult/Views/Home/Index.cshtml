@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><div id="some-div">Akshay Patel</div><img id="ajax-loader" src="~/Images/3.gif" style=" display:none" /></td>
+        </tr>
+        <tr>
+            <td>
+                @Ajax.ActionLink("Javascript", "javaScriptResult", "Home", new AjaxOptions 
+                    {
+                        HttpMethod = "GET",
+                        UpdateTargetId = "some-div",
+                        InsertionMode = InsertionMode.Replace,
+                        LoadingElementId = "ajax-loader",
+                        OnBegin = "onBegin",
+                        OnComplete = "onCompleted", 
+                    }
+                )
+            </td>
+            <script>
+                function onCompleted() {
+                    document.getElementById('ajax-loader').style.visibility = 'none';
+                }
+                function onBegin() {
+                    var loader = document.getElementById('ajax-loader');
+                    loader.style.visibility = 'show';
+                }
+            </script>
+        </tr>
+    </table>
+</body>
+</html>

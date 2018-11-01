@@ -1,0 +1,33 @@
+﻿@{ Layout = null; }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form method="post" action="~/home/Index" id="form1" enctype="multipart/form-data">
+        <table  style="margin:1px; background-color:#ccc;" >
+            <tr style="background-color:#fff;">
+                <td><h1>File Upload Form</h1></td>
+                <td rowspan="3">
+                    @if (ViewData["Path"] != null)
+                    {
+                       <img src="/Images/@ViewData["path"]" alt="FileUpload Image" />
+                    }
+                </td>
+            </tr>
+            <tr style="background-color:#fff;">
+                <td>
+                    <input type="file" name="FileUpload1" id="FileUpload1" />
+                </td>
+            </tr>
+            <tr style="background-color:#fff;">
+                <td>
+                    <input type="submit" name="btnSubmit" value="Upload" id="btnSubmit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

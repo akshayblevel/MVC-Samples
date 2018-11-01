@@ -1,0 +1,141 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>
+                        Addition
+                    </legend>
+                    <form action="/Calc/Add" method="post">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+                                    @if (ViewData["Add"] != null)
+                                    {
+                                        <span>Add is : </span> @ViewData["Add"]
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>No 1</td>
+                                <td><input type="text" name="Text1" id="txtNo1" value=" " /></td>
+                            </tr>
+                            <tr>
+                                <td>No 2</td>
+                                <td><input type="text" name="Text2" id="txtNo2" value=" " /></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input type="submit" name="Submit" value="Submit" /></td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <legend>
+                        Subtraction
+                    </legend><form action="/Calc/Sub" method="post">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+                                    @if (ViewData["Sub"] != null)
+                                    {
+                                        <span>Sub is : </span> @ViewData["Sub"]
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>No 1</td>
+                                <td><input type="text" name="Text1" id="txtNo1" value=" " /></td>
+                            </tr>
+                            <tr>
+                                <td>No 2</td>
+                                <td><input type="text" name="Text2" id="txtNo2" value=" " /></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input type="submit" name="Submit" value="Submit" /></td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>
+                        Multiplication
+                    </legend><form action="/Calc/Mul" method="post">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+                                    @if (ViewData["Mul"] != null)
+                                    {
+                                        <span>Mul is : </span> @ViewData["Mul"]
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>No 1</td>
+                                <td><input type="text" name="Text1" id="txtNo1" value=" " /></td>
+                            </tr>
+                            <tr>
+                                <td>No 2</td>
+                                <td><input type="text" name="Text2" id="txtNo2" value=" " /></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input type="submit" name="Submit" value="Submit" /></td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <legend>
+                        Division
+                    </legend><form action="/Calc/Div" method="post">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+                                    @if (ViewData["Div"] != null)
+                                    {
+                                        <span>Div is : </span> @ViewData["Div"]
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>No 1</td>
+                                <td><input type="text" name="Text1" id="txtNo1" value=" " /></td>
+                            </tr>
+                            <tr>
+                                <td>No 2</td>
+                                <td><input type="text" name="Text2" id="txtNo2" value=" " /></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input type="submit" name="Submit" value="Submit" /></td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

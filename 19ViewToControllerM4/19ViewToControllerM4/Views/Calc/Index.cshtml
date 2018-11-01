@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm("Addition", "Calc", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td colspan="2">
+                    @if (ViewData["Sum"] != null)
+                    {
+                        <span>Sum is : </span> @ViewData["Sum"]
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td>No 1</td>
+                <td><input type="text" name="Text1" id="txtNo1" value=" " /></td>
+            </tr>
+            <tr>
+                <td>No 2</td>
+                <td><input type="text" name="Text2" id="txtNo2" value=" " /></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" name="Submit" value="Submit" /></td>
+            </tr>
+        </table>
+    }
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                @Html.ActionLink("Http Status Code","httpStatusCodeResult","Home")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.ActionLink("Http Unauthorized","httpUnauthorizedResult","Home")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.ActionLink("Http Not Found", "httpNotFoundResult", "Home")
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

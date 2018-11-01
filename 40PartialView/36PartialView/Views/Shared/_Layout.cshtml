@@ -1,0 +1,32 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+</head>
+<body>
+    <table style="width:1000px;" border="1">
+        <tr>
+            <td colspan="2">
+                <h1>Header</h1>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:20%">
+                @Html.Partial("_SideMenu")
+            </td>
+            <td>
+                @RenderBody()
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h3>Footer</h3>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

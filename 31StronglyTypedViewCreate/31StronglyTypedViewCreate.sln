@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31StronglyTypedViewCreate", "31StronglyTypedViewCreate\31StronglyTypedViewCreate.csproj", "{0D79EC52-CD35-4352-AA63-4F0B1B6630AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D79EC52-CD35-4352-AA63-4F0B1B6630AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D79EC52-CD35-4352-AA63-4F0B1B6630AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D79EC52-CD35-4352-AA63-4F0B1B6630AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D79EC52-CD35-4352-AA63-4F0B1B6630AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
